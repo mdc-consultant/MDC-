@@ -1,3 +1,4 @@
+<!-- services.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,7 @@
     <meta name="keywords" content="digital marketing services, Meta Ads service, Google Ads service, SEO services Pakistan, social media marketing agency, performance marketing solutions, email marketing strategy, website optimization, branding services, Mursleen DMC services">
     <meta name="author" content="Mursleen DMC">
     <meta property="og:title" content="Services | Mursleen DMC">
-    <meta property="og:description" content="Detailed list of our digital marketing services.">
+    <meta property="og:description" content="Detailed list of our digital marketing agency services.">
     <meta property="og:image" content="https://via.placeholder.com/1200x630/004D40/F5F5DC?text=Mursleen+DMC+Services">
     <meta property="og:url" content="[Your website URL]/services.html">
 
@@ -282,6 +283,82 @@
             font-size: 1em;
         }
 
+        /* Contact Form Section */
+        .contact-form-section {
+            background: linear-gradient(45deg, var(--color-primary-teal), var(--color-secondary-gold));
+            padding: 100px 20px;
+            text-align: center;
+            color: var(--color-text-light);
+        }
+
+        .contact-form-section h2 {
+            font-size: 3.5em;
+            margin-bottom: 40px;
+            color: var(--color-text-light);
+            line-height: 1.2;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: var(--color-dark-charcoal);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            text-align: left;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--color-text-light);
+            font-size: 1em;
+            transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        }
+
+        .form-group input[type="text"]::placeholder,
+        .form-group input[type="email"]::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .form-group input[type="text"]:focus,
+        .form-group input[type="email"]:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--color-secondary-gold);
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .contact-form .btn {
+            width: auto;
+            padding: 15px 40px;
+            font-size: 1.2em;
+            display: block;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .success-message {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #4CAF50; /* Green */
+            color: white;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.1em;
+            display: none; /* Hidden by default */
+        }
+
         /* Footer */
         footer {
             background-color: var(--color-dark-charcoal);
@@ -432,6 +509,7 @@
     </style>
 </head>
 <body>
+    <!-- Sticky Navigation Bar -->
     <header class="sticky-nav">
         <div class="container nav-content">
             <div class="logo">
@@ -449,6 +527,7 @@
     </header>
 
     <main>
+        <!-- Page Hero Section -->
         <section class="page-hero-section">
             <div class="container">
                 <h1>Our Comprehensive Digital Solutions</h1>
@@ -456,6 +535,7 @@
             </div>
         </section>
 
+        <!-- Services List Section -->
         <section class="services-list-section">
             <div class="container">
                 <h2>What We Offer</h2>
@@ -465,55 +545,72 @@
                         <h3>Meta Ads</h3>
                         <p>Leverage the power of Facebook and Instagram with highly targeted and conversion-focused advertising campaigns.</p>
                         <span class="pricing">Starting From: $500/month</span>
-                        <a href="mailto:mursleenshouqat786@gmail.com" class="btn">Get Started</a>
+                        <a href="#contact-form" class="btn">Get Started</a>
                     </div>
                     <div class="service-item">
                         <i class="fab fa-google"></i>
                         <h3>Google Ads</h3>
                         <p>Dominate search engine results with expertly managed Google Search, Display, Shopping, and Video Ad campaigns.</p>
                         <span class="pricing">Starting From: $600/month</span>
-                        <a href="mailto:mursleenshouqat786@gmail.com" class="btn">Get Started</a>
+                        <a href="#contact-form" class="btn">Get Started</a>
                     </div>
                     <div class="service-item">
                         <i class="fas fa-cogs"></i>
                         <h3>SEO (On-page & Off-page)</h3>
                         <p>Achieve higher organic rankings, drive qualified traffic, and build authority through comprehensive search engine optimization.</p>
                         <span class="pricing">Starting From: $750/month</span>
-                        <a href="mailto:mursleenshouqat786@gmail.com" class="btn">Get Started</a>
+                        <a href="#contact-form" class="btn">Get Started</a>
                     </div>
                     <div class="service-item">
                         <i class="fas fa-envelope-open-text"></i>
                         <h3>Email Marketing</h3>
                         <p>Nurture leads, retain customers, and drive repeat business with personalized, automated, and high-converting email campaigns.</p>
                         <span class="pricing">Starting From: $350/month</span>
-                        <a href="mailto:mursleenshouqat786@gmail.com" class="btn">Get Started</a>
+                        <a href="#contact-form" class="btn">Get Started</a>
                     </div>
                     <div class="service-item">
                         <i class="fas fa-users"></i>
                         <h3>Social Media Marketing</h3>
                         <p>Build a vibrant brand presence, engage your audience, and cultivate a loyal community across key social platforms.</p>
                         <span class="pricing">Starting From: $400/month</span>
-                        <a href="mailto:mursleenshouqat786@gmail.com" class="btn">Get Started</a>
+                        <a href="#contact-form" class="btn">Get Started</a>
                     </div>
                     <div class="service-item">
                         <i class="fas fa-lightbulb"></i>
                         <h3>Branding & Digital Identity</h3>
                         <p>Craft a powerful brand story and a consistent digital identity that resonates deeply with your target audience and stands out.</p>
                         <span class="pricing">Project-Based</span>
-                        <a href="mailto:mursleenshouqat786@gmail.com" class="btn">Get Started</a>
+                        <a href="#contact-form" class="btn">Get Started</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="final-cta-section">
+        <!-- Contact Form Section -->
+        <section id="contact-form" class="contact-form-section">
             <div class="container">
-                <h2>Ready to Transform Your Business?</h2>
-                <a href="mailto:mursleenshouqat786@gmail.com" class="btn">Book a Free Consultation</a>
+                <h2>Ready to Start Your Digital Journey?</h2>
+                <p style="font-size: 1.2em; max-width: 700px; margin: 0 auto 40px; color: rgba(255,255,255,0.9);">Fill out the form below to book a free consultation and discuss your specific needs.</p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your project or goals..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send My Inquiry</button>
+                    <div id="success-message" class="success-message">
+                        Thank you! We’ll get back to you shortly.
+                    </div>
+                </form>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="container footer-content">
             <div class="footer-contact">
@@ -535,5 +632,52 @@
             <p class="powered-by">Powered by Mursleen DMC</p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (href.startsWith('#')) { // Only handle internal links
+                        e.preventDefault();
+                        const targetId = href.substring(1);
+                        const targetElement = document.getElementById(targetId);
+                        if (targetElement) {
+                            targetElement.scrollIntoView({
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            });
+
+            // Form submission handling
+            const contactForm = document.querySelector('.contact-form');
+            const successMessage = document.getElementById('success-message');
+
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault(); // Prevent actual form submission
+
+                    // Simulate form submission (e.g., sending data to a server)
+                    console.log('Form submitted!');
+                    console.log('Name:', document.getElementById('name').value);
+                    console.log('Email:', document.getElementById('email').value);
+                    console.log('Message:', document.getElementById('message').value);
+
+                    // Show success message
+                    if (successMessage) {
+                        successMessage.style.display = 'block';
+                        // Optionally hide the form after success
+                        contactForm.reset(); // Clear form fields
+                        setTimeout(() => {
+                            successMessage.style.display = 'none';
+                        }, 5000); // Hide message after 5 seconds
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
