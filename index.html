@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mursleen DMC | Digital Growth, Delivered. Built for Results.</title>
+    <meta name="description" content="Mursleen DMC is a results-driven digital marketing consultancy specializing in Meta Ads, Google Ads, SEO, and more. We help businesses achieve digital growth. Built for Results.">
+    <meta name="keywords" content="digital marketing, marketing agency, Meta Ads, Google Ads, SEO, social media marketing, performance marketing, email marketing, website strategy, branding, Mursleen DMC, Pakistan">
+    <meta name="author" content="Mursleen DMC">
+    <meta property="og:title" content="Mursleen DMC | Digital Growth, Delivered.">
+    <meta property="og:description" content="Your partner for digital growth and measurable results.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/004D40/F5F5DC?text=Mursleen+DMC+Digital+Growth">
+    <meta property="og:url" content="[Your website URL]">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles & Color Palette */
+        :root {
+            --color-primary-teal: #004D40; /* Deep Teal */
+            --color-secondary-gold: #B8860B; /* Muted Gold */
+            --color-dark-charcoal: #2C3E50; /* Sophisticated Charcoal */
+            --color-light-cream: #F5F5DC; /* Soft Cream */
+            --color-accent-blush: #FFDAB9; /* Subtle Blush */
+            --color-text-light: #F0F0F0;
+            --color-text-dark: #333;
+            --color-background-light: #FFFFFF;
+            --color-background-dark: #1E1E1E;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--color-text-dark);
+            line-height: 1.6;
+            background-color: var(--color-background-light);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--color-dark-charcoal);
+            font-weight: 600;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 80px 0;
+        }
+
+        section.dark-theme {
+            background-color: var(--color-background-dark);
+            color: var(--color-text-light);
+        }
+
+        section.dark-theme h2,
+        section.dark-theme h3,
+        section.dark-theme p {
+            color: var(--color-text-light);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 14px 35px;
+            background-color: var(--color-primary-teal);
+            color: var(--color-light-cream);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease-in-out;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1em;
+            letter-spacing: 0.5px;
+        }
+
+        .btn:hover {
+            background-color: var(--color-secondary-gold);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        /* Navigation Bar */
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(8px);
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            z-index: 1000;
+            padding: 15px 0;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 32px;
+            color: var(--color-primary-teal);
+            line-height: 1;
+        }
+
+        .logo .tagline {
+            font-size: 14px;
+            margin-top: 5px;
+            color: var(--color-dark-charcoal);
+            font-weight: 400;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 40px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--color-dark-charcoal);
+            font-weight: 500;
+            font-size: 1.1em;
+            transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            display: block;
+            margin-top: 5px;
+            right: 0;
+            background: var(--color-secondary-gold);
+            transition: width 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: var(--color-secondary-gold);
+            transform: translateY(-2px);
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+            left: 0;
+            background: var(--color-secondary-gold);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, var(--color-dark-charcoal) 0%, var(--color-primary-teal) 100%);
+            color: var(--color-text-light);
+            padding: 180px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .hero-section h1 {
+            font-size: 4.5em;
+            color: var(--color-text-light);
+            margin-bottom: 30px;
+            line-height: 1.1;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInSlideUp 1s forwards;
+            animation-delay: 0.3s;
+        }
+
+        .hero-section .brand-story {
+            font-size: 1.6em;
+            margin-top: 20px;
+            color: rgba(255, 255, 255, 0.85);
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            animation-delay: 0.7s;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .hero-section .brand-story span {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .hero-section .btn {
+            margin-top: 40px;
+            opacity: 0;
+            animation: fadeInSlideUp 1s forwards;
+            animation-delay: 1s;
+        }
+
+        @keyframes fadeInSlideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Services Preview */
+        .services-preview {
+            background-color: var(--color-light-cream);
+            text-align: center;
+        }
+
+        .services-preview h2 {
+            font-size: 3em;
+            margin-bottom: 60px;
+            color: var(--color-dark-charcoal);
+        }
+
+        .service-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+
+        .service-card {
+            background-color: var(--color-background-light);
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            text-align: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .service-card i {
+            font-size: 55px;
+            color: var(--color-primary-teal);
+            margin-bottom: 25px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .service-card:hover i {
+            transform: scale(1.1);
+        }
+
+        .service-card h3 {
+            font-size: 1.8em;
+            color: var(--color-primary-teal);
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            color: var(--color-text-dark);
+            font-size: 1.05em;
+            line-height: 1.7;
+        }
+
+        /* Why Choose Mursleen DMC */
+        .why-choose-us {
+            background-color: var(--color-background-dark);
+            color: var(--color-text-light);
+            text-align: center;
+        }
+
+        .why-choose-us h2 {
+            font-size: 3em;
+            margin-bottom: 60px;
+            color: var(--color-text-light);
+        }
+
+        .value-props-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+
+        .value-prop-item {
+            background-color: var(--color-dark-charcoal);
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        }
+
+        .value-prop-item:hover {
+            transform: translateY(-8px);
+            background-color: var(--color-primary-teal);
+        }
+
+        .value-prop-item i {
+            font-size: 55px;
+            color: var(--color-secondary-gold);
+            margin-bottom: 25px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .value-prop-item:hover i {
+            transform: rotate(5deg) scale(1.1);
+        }
+
+        .value-prop-item h3 {
+            font-size: 1.8em;
+            color: var(--color-secondary-gold);
+            margin-bottom: 15px;
+        }
+
+        .value-prop-item p {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 1.05em;
+            line-height: 1.7;
+        }
+
+        /* Animated Stats */
+        .stats-section {
+            background-color: var(--color-primary-teal);
+            color: var(--color-text-light);
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+
+        .stat-item {
+            flex: 1 1 250px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .stat-item.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .stat-item .number {
+            font-size: 5.5em;
+            font-weight: 700;
+            color: var(--color-secondary-gold);
+            margin-bottom: 10px;
+            line-height: 1;
+        }
+
+        .stat-item .description {
+            font-size: 1.5em;
+            color: var(--color-text-light);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.9;
+        }
+
+        /* Client Testimonials */
+        .testimonials-section {
+            background-color: var(--color-light-cream);
+            text-align: center;
+        }
+
+        .testimonials-section h2 {
+            font-size: 3em;
+            margin-bottom: 60px;
+            color: var(--color-dark-charcoal);
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .testimonial-card {
+            background-color: var(--color-background-light);
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .testimonial-card .quote-icon {
+            font-size: 3em;
+            color: var(--color-accent-blush);
+            margin-bottom: 20px;
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            font-size: 1.15em;
+            margin-bottom: 25px;
+            color: var(--color-text-dark);
+            line-height: 1.7;
+        }
+
+        .testimonial-card .author {
+            font-weight: 600;
+            color: var(--color-primary-teal);
+            font-size: 1.1em;
+            margin-top: auto; /* Pushes author to bottom */
+        }
+
+        /* FAQs Section */
+        .faqs-section {
+            background-color: var(--color-background-dark);
+            color: var(--color-text-light);
+            text-align: center;
+        }
+
+        .faqs-section h2 {
+            font-size: 3em;
+            margin-bottom: 60px;
+            color: var(--color-text-light);
+        }
+
+        .faq-list {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.3em;
+            color: var(--color-text-light);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .faq-question:hover {
+            color: var(--color-secondary-gold);
+        }
+
+        .faq-question i {
+            font-size: 1.2em;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .faq-question.active i {
+            transform: rotate(180deg);
+            color: var(--color-secondary-gold);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.05em;
+            line-height: 1.7;
+        }
+
+        .faq-answer.active {
+            max-height: 200px; /* Adjust as needed */
+            padding-top: 10px;
+        }
+
+        /* Call to Action Section */
+        .final-cta-section {
+            background: linear-gradient(45deg, var(--color-primary-teal), var(--color-secondary-gold));
+            padding: 120px 20px;
+            text-align: center;
+            color: var(--color-text-light);
+        }
+
+        .final-cta-section h2 {
+            font-size: 3.5em;
+            margin-bottom: 40px;
+            color: var(--color-text-light);
+            line-height: 1.2;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--color-dark-charcoal);
+            color: var(--color-text-light);
+            padding: 60px 0 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .footer-contact, .footer-links {
+            flex: 1 1 280px;
+            margin: 20px;
+        }
+
+        .footer-contact h3, .footer-links h3 {
+            color: var(--color-secondary-gold);
+            margin-bottom: 25px;
+            font-size: 1.6em;
+        }
+
+        .footer-contact p, .footer-contact a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            line-height: 1.8;
+            font-size: 1.05em;
+        }
+
+        .footer-contact a:hover {
+            color: var(--color-accent-blush);
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links ul li a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-size: 1.05em;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .footer-links ul li a:hover {
+            color: var(--color-accent-blush);
+        }
+
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .copyright .powered-by {
+            font-size: 0.8em;
+            opacity: 0.8;
+            margin-top: 5px;
+            letter-spacing: 0.5px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            .hero-section h1 {
+                font-size: 3.5em;
+            }
+            .services-preview h2,
+            .why-choose-us h2,
+            .testimonials-section h2,
+            .faqs-section h2,
+            .final-cta-section h2 {
+                font-size: 2.5em;
+            }
+            .stat-item .number {
+                font-size: 4.5em;
+            }
+            .stat-item .description {
+                font-size: 1.2em;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .logo {
+                margin-bottom: 15px;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .hero-section {
+                padding: 120px 20px;
+            }
+            .hero-section h1 {
+                font-size: 2.8em;
+            }
+            .hero-section .brand-story {
+                font-size: 1.3em;
+            }
+
+            .service-cards-grid,
+            .value-props-grid,
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-container {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .footer-contact, .footer-links {
+                margin: 15px auto;
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-section h1 {
+                font-size: 2em;
+            }
+            .hero-section .brand-story {
+                font-size: 1.1em;
+            }
+            .btn {
+                padding: 12px 25px;
+                font-size: 1em;
+            }
+            .services-preview h2,
+            .why-choose-us h2,
+            .testimonials-section h2,
+            .faqs-section h2,
+            .final-cta-section h2 {
+                font-size: 2em;
+            }
+            .stat-item .number {
+                font-size: 3.5em;
+            }
+            .stat-item .description {
+                font-size: 1em;
+            }
+            .faq-question {
+                font-size: 1.1em;
+            }
+            .faq-answer {
+                font-size: 0.95em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="sticky-nav">
+        <div class="container nav-content">
+            <div class="logo">
+                <h1>Mursleen DMC</h1>
+                <p class="tagline">Built for Results</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h1>Digital Growth, Delivered.</h1>
+                <div class="brand-story">
+                    <span>Founded on Precision.</span>
+                    <span>Driven by Data.</span>
+                    <span>Focused on Your ROI.</span>
+                    <span>Achieving Global Impact.</span>
+                </div>
+                <a href="#contact-section" class="btn">Book a Free Consultation</a>
+            </div>
+        </section>
+
+        <section class="services-preview">
+            <div class="container">
+                <h2>Our Expertise</h2>
+                <div class="service-cards-grid">
+                    <div class="service-card animate-on-scroll">
+                        <i class="fas fa-bullhorn"></i>
+                        <h3>Meta Ads</h3>
+                        <p>Dominate social platforms with highly targeted Meta campaigns that convert and grow your audience.</p>
+                    </div>
+                    <div class="service-card animate-on-scroll">
+                        <i class="fab fa-google"></i>
+                        <h3>Google Ads</h3>
+                        <p>Capture high-intent leads and sales through strategic Google Search, Display, and Shopping Ad campaigns.</p>
+                    </div>
+                    <div class="service-card animate-on-scroll">
+                        <i class="fas fa-search-dollar"></i>
+                        <h3>SEO</h3>
+                        <p>Elevate your rankings and organic traffic with data-driven SEO strategies for lasting visibility.</p>
+                    </div>
+                    <div class="service-card animate-on-scroll">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Performance Marketing</h3>
+                        <p>Maximize your ROI through meticulously optimized, results-focused campaigns across all channels.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose-us dark-theme">
+            <div class="container">
+                <h2>Why Partner with Mursleen DMC?</h2>
+                <div class="value-props-grid">
+                    <div class="value-prop-item animate-on-scroll">
+                        <i class="fas fa-database"></i>
+                        <h3>Data-Driven</h3>
+                        <p>Every decision is backed by insights, ensuring optimal performance and measurable outcomes.</p>
+                    </div>
+                    <div class="value-prop-item animate-on-scroll">
+                        <i class="fas fa-file-invoice"></i>
+                        <h3>Transparent Reporting</h3>
+                        <p>Full visibility into your campaign's progress, spend, and results – no hidden fees or jargon.</p>
+                    </div>
+                    <div class="value-prop-item animate-on-scroll">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <h3>Performance-Based</h3>
+                        <p>Our focus is purely on achieving your business goals, driving real growth and undeniable ROI.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-container">
+                    <div class="stat-item animate-on-scroll">
+                        <div class="number" data-target="150">0</div>
+                        <div class="description">Projects Completed</div>
+                    </div>
+                    <div class="stat-item animate-on-scroll">
+                        <div class="number" data-target="98">0%</div>
+                        <div class="description">Client Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <div class="container">
+                <h2>What Our Clients Say</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card animate-on-scroll">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"Mursleen DMC transformed our online presence. Their Meta Ads expertise delivered incredible ROI and genuine engagement."</p>
+                        <div class="author">- Sarah J., E-commerce Founder</div>
+                    </div>
+                    <div class="testimonial-card animate-on-scroll">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"The SEO strategy implemented by Mursleen DMC significantly boosted our organic traffic within months. Highly recommend their dedication!"</p>
+                        <div class="author">- David L., Tech Startup CEO</div>
+                    </div>
+                    <div class="testimonial-card animate-on-scroll">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"Transparent, professional, and truly results-driven. Mursleen DMC is an invaluable partner for any brand seeking digital growth."</p>
+                        <div class="author">- Aisha R., Small Business Owner</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faqs-section dark-theme">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    <div class="faq-item animate-on-scroll">
+                        <div class="faq-question">
+                            What makes Mursleen DMC different from other agencies?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We combine data-driven strategies with personalized attention, focusing relentlessly on your specific business goals and measurable results. Our approach is bespoke, not boilerplate.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item animate-on-scroll">
+                        <div class="faq-question">
+                            How do you measure campaign success and ROI?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We define success based on your key performance indicators (KPIs). We provide regular, transparent reports tracking metrics like ROI, lead generation, conversion rates, and brand visibility to show clear impact.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item animate-on-scroll">
+                        <div class="faq-question">
+                            Do you work with businesses of all sizes and industries?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we tailor our solutions to meet the unique needs of startups, small businesses, and established brands across various industries. Our strategies are scalable to fit your ambitions.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item animate-on-scroll">
+                        <div class="faq-question">
+                            What's the typical timeline for seeing results from your services?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>While some immediate results can be seen with PPC, sustainable growth from SEO and branding takes time, typically 3-6 months for significant impact. We focus on long-term, compounding results.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item animate-on-scroll">
+                        <div class="faq-question">
+                            How do I get started with Mursleen DMC?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Simply click our "Book a Free Consultation" button. We'll schedule a no-obligation call to discuss your current challenges, goals, and how we can craft a winning digital strategy for your brand.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-cta-section" id="contact-section">
+            <div class="container">
+                <h2>Ready to Amplify Your Digital Presence?</h2>
+                <a href="mailto:mursleenshouqat786@gmail.com" class="btn">Let’s Grow Your Brand</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:mursleenshouqat786@gmail.com">mursleenshouqat786@gmail.com</a></p>
+                <p>Address: Chowk Sarwar Shaheed, Chak No 146 Chak No 518, Chowk Munda – 34030, Pakistan</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Mursleen DMC. All Rights Reserved.</p>
+            <p class="powered-by">Powered by Mursleen DMC</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (href.startsWith('#')) { // Only handle internal links
+                        e.preventDefault();
+                        const targetId = href.substring(1);
+                        const targetElement = document.getElementById(targetId);
+                        if (targetElement) {
+                            targetElement.scrollIntoView({
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            });
+
+            // Intersection Observer for fade-in/slide-up animations
+            const animateOnScrollElements = document.querySelectorAll('.animate-on-scroll');
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            animateOnScrollElements.forEach(el => observer.observe(el));
+
+            // Animated Counters
+            const counterElements = document.querySelectorAll('.stat-item .number');
+            const counterObserverOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.7 // Trigger when 70% of the counter is visible
+            };
+
+            const counterObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const target = parseInt(entry.target.dataset.target);
+                        let current = 0;
+                        const duration = 2000; // 2 seconds
+                        const start = performance.now();
+
+                        function animateCounter(currentTime) {
+                            const elapsed = currentTime - start;
+                            const progress = Math.min(elapsed / duration, 1);
+                            current = target * progress;
+                            
+                            entry.target.innerText = Math.ceil(current) + (entry.target.innerText.includes('%') ? '%' : (entry.target.innerText.includes('+') ? '+' : ''));
+
+                            if (progress < 1) {
+                                requestAnimationFrame(animateCounter);
+                            } else {
+                                entry.target.innerText = target + (entry.target.innerText.includes('%') ? '%' : (entry.target.innerText.includes('+') ? '+' : ''));
+                            }
+                        }
+                        requestAnimationFrame(animateCounter);
+                        observer.unobserve(entry.target); // Stop observing once animated
+                    }
+                });
+            }, counterObserverOptions);
+
+            counterElements.forEach(counter => {
+                counterObserver.observe(counter);
+            });
+
+            // FAQs Accordion
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const icon = question.querySelector('i');
+
+                    // Close all other open FAQs
+                    faqQuestions.forEach(otherQuestion => {
+                        if (otherQuestion !== question) {
+                            const otherAnswer = otherQuestion.nextElementSibling;
+                            const otherIcon = otherQuestion.querySelector('i');
+                            if (otherAnswer && otherAnswer.classList.contains('active')) {
+                                otherAnswer.classList.remove('active');
+                                otherAnswer.style.maxHeight = '0';
+                                otherIcon.classList.remove('active');
+                            }
+                        }
+                    });
+
+                    // Toggle current FAQ
+                    if (answer.classList.contains('active')) {
+                        answer.classList.remove('active');
+                        answer.style.maxHeight = '0';
+                        icon.classList.remove('active');
+                    } else {
+                        answer.classList.add('active');
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        icon.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
