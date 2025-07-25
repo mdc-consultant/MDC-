@@ -1,84 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Nishat ul ain DMC - Your Digital Marketing Partner</title>
-    <meta name="description" content="Learn about Nishat ul ain DMC, a results-driven digital consultancy founded by Muhammad Mursleen, dedicated to smart strategy and data-backed campaigns. Built for Results.">
-    <meta name="keywords" content="about Nishat ul ain DMC, Muhammad Mursleen, digital marketing consultancy, digital agency, marketing experts, our story, mission, vision, Pakistan">
-    <meta name="author" content="Nishat ul ain DMC">
-    <meta property="og:title" content="About Us | Nishat ul ain DMC">
-    <meta property="og:description" content="Meet the team and learn about our mission.">
-    <meta property="og:image" content="https://via.placeholder.com/1200x630/004D40/F5F5DC?text=Nishat+ul+ain+DMC+About+Us">
-    <meta property="og:url" content="[Your website URL]/about.html">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Nishat ul ain DMC</title>
 
-    <!-- The rest of your head section remains unchanged -->
-    <!-- ... -->
+  <!-- Bootstrap & Google Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <header class="sticky-nav">
-        <div class="container nav-content">
-            <div class="logo">
-                <h1>Nishat ul ain DMC</h1>
-                <p class="tagline">Built for Results</p>
-            </div>
-            <!-- ... -->
+
+  <!-- Theme Toggle Button -->
+  <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+
+  <!-- Header -->
+  <header class="main-header shadow-sm py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h3 class="fw-bold m-0">Nishat ul ain DMC</h3>
+      <nav>
+        <a href="index.html" class="nav-link d-inline-block px-3">Home</a>
+        <a href="services.html" class="nav-link d-inline-block px-3">Services</a>
+        <a href="about.html" class="nav-link d-inline-block px-3 active">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="py-5">
+    <div class="container">
+      <h1 class="mb-4 text-center">About Us</h1>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p>
+            At <strong>Nishat ul ain DMC</strong>, we are a team of results-driven digital marketers passionate about growth. Since our founding, we've helped brands amplify their online presence through data-backed strategies and innovative marketing solutions.
+          </p>
+          <p>
+            Our mission is to empower businesses of all sizes with cutting-edge tools and transparent strategies that deliver real, measurable impact — from awareness to ROI.
+          </p>
         </div>
-    </header>
-
-    <main>
-        <section class="page-hero-section">
-            <div class="container">
-                <h1>Our Story: Built for Your Success</h1>
-                <p>Learn how Nishat ul ain DMC grew from a vision into a results-driven digital consultancy.</p>
-            </div>
-        </section>
-
-        <section class="about-overview-section">
-            <div class="container">
-                <h2>About Nishat ul ain DMC</h2>
-                <p>Nishat ul ain DMC is a results-driven digital consultancy helping businesses around the world grow through smart strategy, creative content, and data-backed campaigns. We believe in transparency, measurable outcomes, and building long-term partnerships with our clients to navigate the complexities of the digital landscape. Our mission is to transform your online challenges into impactful growth opportunities.</p>
-            </div>
-        </section>
-
-        <section class="founder-section dark-theme">
-            <div class="container founder-content">
-                <div class="founder-image-container">
-                    <img src="https://via.placeholder.com/280x280/F5F5DC/004D40?text=Muhammad+Mursleen" alt="Muhammad Mursleen, Founder of Nishat ul ain DMC">
-                </div>
-                <div class="founder-details">
-                    <h2>Nishat ul ain</h2>
-                    <p class="title">Founder & Lead Consultant</p>
-                    <p>With a passion for performance and precision, Mursleen founded this agency to deliver data-driven digital solutions to startups and brands worldwide.</p>
-                    <blockquote class="quote">
-                        “Digital marketing isn’t about noise — it’s about results.”
-                    </blockquote>
-                    <a href="mailto:nishugul8888@gmail.com" class="btn">Contact the Founder</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container footer-content">
-            <div class="footer-contact">
-                <h3>Contact Us</h3>
-                <p>Email: <a href="mailto:nishugul8888@gmail.com">nishugul8888@gmail.com</a></p>
-                <p>Address: Meo Street Jhang Sadar 35200 Pakistan</p>
-            </div>
-            <div class="footer-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                </ul>
-            </div>
+        <div class="col-md-6">
+          <img src="https://source.unsplash.com/600x400/?marketing,team" alt="Our Team" class="img-fluid rounded shadow"/>
         </div>
-        <div class="copyright">
-            <p>&copy; 2025 Nishat ul ain DMC. All Rights Reserved.</p>
-            <p class="powered-by">Powered by Nishat ul ain DMC</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Values -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4 text-center">Our Core Values</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <h4>Transparency</h4>
+          <p>No jargon, no hidden fees. We believe in clear communication and honest reporting.</p>
         </div>
-    </footer>
+        <div class="col-md-4 mb-4">
+          <h4>Performance</h4>
+          <p>We don't just execute campaigns — we optimize relentlessly for your goals.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h4>Innovation</h4>
+          <p>We stay ahead of digital trends so your business stays ahead of the competition.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-4 mt-5">
+    <div class="container d-flex justify-content-between flex-wrap">
+      <div>
+        <h5>Contact Us</h5>
+        <p>Email: <a href="mailto:nishugul8888@gmail.com" class="text-light">nishugul8888@gmail.com</a></p>
+        <p>Address: Meo Street, Jhang Sadar, Pakistan</p>
+      </div>
+      <div>
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-light">Home</a></li>
+          <li><a href="services.html" class="text-light">Services</a></li>
+          <li><a href="about.html" class="text-light">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+      <small>&copy; 2025 Nishat ul ain DMC. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Dark mode toggle
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
 </body>
 </html>
