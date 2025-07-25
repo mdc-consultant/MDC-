@@ -4,202 +4,234 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Services | Nishat ul ain DMC</title>
-
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
-
-  <!-- Font Awesome for icons -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
-
-  <!-- Custom CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f7f5f9;
-      color: #222;
+      background-color: #f4f5f7;
+      color: #333;
     }
 
     header {
       background-color: #fff;
-      box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
 
-    .navbar-brand {
-      font-weight: bold;
-      color: #2c2c2c;
-    }
-
-    .navbar-nav .nav-link.active {
-      color: #8c52ff;
+    .nav-link {
+      color: #333;
       font-weight: 500;
+    }
+
+    .nav-link.active {
+      color: #6c63ff;
     }
 
     .services-section {
-      padding: 4rem 0;
-      background: linear-gradient(145deg, #f9f6ff, #ece6fa);
+      padding: 60px 0;
+      background: linear-gradient(to right, #fdfbfb, #ebedee);
     }
 
-    .services-section h2 {
+    .section-title {
       text-align: center;
-      margin-bottom: 2.5rem;
-      color: #4b2b86;
+      font-size: 36px;
+      margin-bottom: 50px;
+      color: #2c2c2c;
     }
 
     .service-card {
-      background-color: #fff;
+      background: #ffffff;
+      border: none;
       border-radius: 20px;
-      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
-      padding: 2rem;
-      transition: 0.3s ease-in-out;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+      transition: transform 0.3s ease;
+      padding: 30px;
+      text-align: center;
     }
 
     .service-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+      transform: translateY(-10px);
     }
 
-    .service-icon {
-      font-size: 2.5rem;
-      color: #8c52ff;
-      margin-bottom: 1rem;
+    .service-card h4 {
+      margin-top: 20px;
+      color: #111;
+      font-size: 22px;
     }
 
-    .service-card h5 {
-      color: #2c2c2c;
-      font-weight: 600;
+    .service-card p {
+      font-size: 15px;
+      color: #555;
     }
 
     .service-card .price {
-      color: #8c52ff;
-      font-weight: 500;
-      font-size: 1.1rem;
-      margin: 0.5rem 0;
+      font-weight: bold;
+      font-size: 16px;
+      color: #6c63ff;
+      margin: 15px 0;
     }
 
-    .btn-call {
-      margin-top: auto;
-      background-color: #8c52ff;
-      color: #fff;
-      border: none;
-      border-radius: 12px;
-      padding: 0.5rem 1rem;
-    }
-
-    .btn-call:hover {
-      background-color: #6d3ccc;
-    }
-
-    .contact-form-section {
-      background: #1d1a2f;
-      padding: 3rem 0;
+    .service-card button {
+      background: #6c63ff;
       color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: 500;
+      transition: background 0.3s;
     }
 
-    .contact-form-section h2 {
-      text-align: center;
-      color: #fff;
-      margin-bottom: 2rem;
+    .service-card button:hover {
+      background: #574bff;
     }
 
-    .form-control,
-    .btn-submit {
+    .contact-form {
+      background: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
       border-radius: 10px;
+      border: 1px solid #ddd;
     }
 
-    .btn-submit {
-      background-color: #8c52ff;
-      color: #fff;
+    .contact-form .btn {
+      background-color: #6c63ff;
       border: none;
     }
 
-    .btn-submit:hover {
-      background-color: #6a3bd9;
-    }
-
-    footer {
-      background-color: #111;
-      color: #aaa;
-      padding: 2rem 0;
-    }
-
-    footer a {
-      color: #aaa;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      color: #fff;
+    .contact-form .btn:hover {
+      background-color: #574bff;
     }
   </style>
 </head>
-
 <body>
-  <!-- Navbar -->
-  <header class="py-3">
-    <div class="container d-flex justify-content-between align-items-center">
-      <a class="navbar-brand" href="index.html">Nishat ul ain DMC</a>
-      <nav>
-        <ul class="nav">
-          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="services.html" class="nav-link active">Services</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <!-- Services Section -->
-  <section class="services-section">
-    <div class="container">
-      <h2>Our Services</h2>
-      <div class="row g-4">
-        <!-- Service Cards -->
-        <!-- (cards omitted here for brevity, they would be inserted just like before) -->
+<header class="py-3 border-bottom">
+  <div class="container d-flex justify-content-between align-items-center">
+    <h2 class="mb-0 fw-bold">Nishat ul ain DMC</h2>
+    <nav>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="services.html" class="nav-link active">Services</a>
+      <a href="about.html" class="nav-link">About</a>
+    </nav>
+  </div>
+</header>
+
+<main class="services-section">
+  <div class="container">
+    <h2 class="section-title">Our Services</h2>
+    <div class="row g-4">
+      <!-- Service 1 -->
+      <div class="col-md-4">
+        <div class="service-card">
+          <h4>Meta Ads (Facebook/Instagram)</h4>
+          <p>Strategic campaigns to reach your audience on Facebook & Instagram with high ROI.</p>
+          <div class="price">Starting from $299</div>
+          <button>Get a Free Call</button>
+        </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Contact Form Section -->
-  <section id="contact-form" class="contact-form-section">
-    <div class="container">
-      <h2>Get in Touch</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-8">
-          <form action="mailto:nishugul8888@gmail.com" method="POST" enctype="text/plain">
-            <div class="mb-3">
-              <label class="form-label">Your Name</label>
-              <input type="text" name="name" class="form-control" required />
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Email</label>
-              <input type="email" name="email" class="form-control" required />
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Service You’re Interested In</label>
-              <input type="text" name="service" class="form-control" />
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Message</label>
-              <textarea name="message" class="form-control" rows="4"></textarea>
-            </div>
-            <button type="submit" class="btn btn-submit w-100">Submit Request</button>
-          </form>
+      <!-- Service 2 -->
+      <div class="col-md-4">
+        <div class="service-card">
+          <h4>Google Ads</h4>
+          <p>Drive conversions through Search, Display, YouTube, and Shopping ads.</p>
+          <div class="price">Starting from $399</div>
+          <button>Get a Free Call</button>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="col-md-4">
+        <div class="service-card">
+          <h4>SEO Optimization</h4>
+          <p>On-page & off-page strategies to increase search engine rankings.</p>
+          <div class="price">Starting from $249</div>
+          <button>Get a Free Call</button>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="col-md-4">
+        <div class="service-card">
+          <h4>Email Marketing</h4>
+          <p>Automated email flows to nurture leads and drive engagement.</p>
+          <div class="price">Starting from $199</div>
+          <button>Get a Free Call</button>
+        </div>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="col-md-4">
+        <div class="service-card">
+          <h4>Conversion Rate Optimization</h4>
+          <p>Optimize landing pages and funnels for better lead generation.</p>
+          <div class="price">Custom Pricing</div>
+          <button>Get a Free Call</button>
+        </div>
+      </div>
+
+      <!-- Service 6 -->
+      <div class="col-md-4">
+        <div class="service-card">
+          <h4>Analytics & Reporting</h4>
+          <p>Track KPIs, behavior, and ROI using detailed dashboards.</p>
+          <div class="price">From $99/month</div>
+          <button>Get a Free Call</button>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</main>
 
-  <!-- Footer -->
-  <footer class="text-center">
-    <div class="container">
-      <p>&copy; 2025 Nishat ul ain DMC. All rights reserved.</p>
-      <p><a href="mailto:nishugul8888@gmail.com">nishugul8888@gmail.com</a></p>
+<section class="py-5" style="background-color: #f1f1f1;">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Us for a Custom Plan</h2>
+    <div class="contact-form mx-auto" style="max-width: 700px;">
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" id="name" class="form-control" placeholder="Your name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" id="email" class="form-control" placeholder="you@example.com" required>
+        </div>
+        <div class="mb-3">
+          <label for="service" class="form-label">Service You're Interested In</label>
+          <input type="text" id="service" class="form-control" placeholder="e.g., Google Ads, SEO..." required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Your Message</label>
+          <textarea id="message" class="form-control" rows="4" placeholder="Write your message here..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Submit Inquiry</button>
+      </form>
     </div>
-  </footer>
+  </div>
+</section>
+
+<footer class="bg-dark text-white py-4">
+  <div class="container d-flex justify-content-between">
+    <div>
+      <h5>Nishat ul ain DMC</h5>
+      <p>Email: <a href="mailto:nishugul8888@gmail.com" class="text-white">nishugul8888@gmail.com</a></p>
+      <p>Meo Street Jhang Sadar 35200, Pakistan</p>
+    </div>
+    <div>
+      <h5>Quick Links</h5>
+      <ul class="list-unstyled">
+        <li><a href="index.html" class="text-white">Home</a></li>
+        <li><a href="services.html" class="text-white">Services</a></li>
+        <li><a href="about.html" class="text-white">About</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
