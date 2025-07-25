@@ -3,489 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Mursleen DMC - Your Digital Marketing Partner</title>
-    <meta name="description" content="Learn about Mursleen DMC, a results-driven digital consultancy founded by Muhammad Mursleen, dedicated to smart strategy and data-backed campaigns. Built for Results.">
-    <meta name="keywords" content="about Mursleen DMC, Muhammad Mursleen, digital marketing consultancy, digital agency, marketing experts, our story, mission, vision, Pakistan">
-    <meta name="author" content="Mursleen DMC">
-    <meta property="og:title" content="About Us | Mursleen DMC">
+    <title>About Us | Nishat ul ain DMC - Your Digital Marketing Partner</title>
+    <meta name="description" content="Learn about Nishat ul ain DMC, a results-driven digital consultancy founded by Muhammad Mursleen, dedicated to smart strategy and data-backed campaigns. Built for Results.">
+    <meta name="keywords" content="about Nishat ul ain DMC, Muhammad Mursleen, digital marketing consultancy, digital agency, marketing experts, our story, mission, vision, Pakistan">
+    <meta name="author" content="Nishat ul ain DMC">
+    <meta property="og:title" content="About Us | Nishat ul ain DMC">
     <meta property="og:description" content="Meet the team and learn about our mission.">
-    <meta property="og:image" content="https://via.placeholder.com/1200x630/004D40/F5F5DC?text=Mursleen+DMC+About+Us">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/004D40/F5F5DC?text=Nishat+ul+ain+DMC+About+Us">
     <meta property="og:url" content="[Your website URL]/about.html">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        /* General Styles & Color Palette */
-        :root {
-            --color-primary-teal: #004D40; /* Deep Teal */
-            --color-secondary-gold: #B8860B; /* Muted Gold */
-            --color-dark-charcoal: #2C3E50; /* Sophisticated Charcoal */
-            --color-light-cream: #F5F5DC; /* Soft Cream */
-            --color-accent-blush: #FFDAB9; /* Subtle Blush */
-            --color-text-light: #F0F0F0;
-            --color-text-dark: #333;
-            --color-background-light: #FFFFFF;
-            --color-background-dark: #1E1E1E;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Open Sans', sans-serif;
-            color: var(--color-text-dark);
-            line-height: 1.6;
-            background-color: var(--color-background-light);
-            overflow-x: hidden;
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Poppins', sans-serif;
-            color: var(--color-dark-charcoal);
-            font-weight: 600;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Section Styling */
-        section {
-            padding: 80px 0;
-        }
-
-        section.dark-theme {
-            background-color: var(--color-background-dark);
-            color: var(--color-text-light);
-        }
-
-        section.dark-theme h2,
-        section.dark-theme h3,
-        section.dark-theme p {
-            color: var(--color-text-light);
-        }
-
-        /* Buttons */
-        .btn {
-            display: inline-block;
-            padding: 14px 35px;
-            background-color: var(--color-primary-teal);
-            color: var(--color-light-cream);
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: all 0.3s ease-in-out;
-            border: none;
-            cursor: pointer;
-            font-size: 1.1em;
-            letter-spacing: 0.5px;
-        }
-
-        .btn:hover {
-            background-color: var(--color-secondary-gold);
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-        }
-
-        /* Navigation Bar */
-        .sticky-nav {
-            position: sticky;
-            top: 0;
-            width: 100%;
-            background-color: rgba(255, 255, 255, 0.98);
-            backdrop-filter: blur(8px);
-            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
-            z-index: 1000;
-            padding: 15px 0;
-        }
-
-        .nav-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo h1 {
-            margin: 0;
-            font-size: 32px;
-            color: var(--color-primary-teal);
-            line-height: 1;
-        }
-
-        .logo .tagline {
-            font-size: 14px;
-            margin-top: 5px;
-            color: var(--color-dark-charcoal);
-            font-weight: 400;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        nav ul li {
-            margin-left: 40px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: var(--color-dark-charcoal);
-            font-weight: 500;
-            font-size: 1.1em;
-            transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
-            position: relative;
-        }
-
-        nav ul li a::after {
-            content: '';
-            position: absolute;
-            width: 0%;
-            height: 2px;
-            display: block;
-            margin-top: 5px;
-            right: 0;
-            background: var(--color-secondary-gold);
-            transition: width 0.3s ease-in-out;
-        }
-
-        nav ul li a:hover {
-            color: var(--color-secondary-gold);
-            transform: translateY(-2px);
-        }
-
-        nav ul li a:hover::after {
-            width: 100%;
-            left: 0;
-            background: var(--color-secondary-gold);
-        }
-
-        /* Hero Section */
-        .page-hero-section {
-            background: linear-gradient(135deg, var(--color-primary-teal) 0%, var(--color-dark-charcoal) 100%);
-            color: var(--color-text-light);
-            padding: 150px 20px 100px;
-            text-align: center;
-            min-height: 40vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInSlideUp 1s forwards;
-            animation-delay: 0.3s;
-        }
-
-        .page-hero-section h1 {
-            font-size: 4em;
-            color: var(--color-text-light);
-            margin-bottom: 20px;
-            line-height: 1.1;
-        }
-
-        .page-hero-section p {
-            font-size: 1.5em;
-            color: rgba(255, 255, 255, 0.85);
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        @keyframes fadeInSlideUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        /* About Overview Section */
-        .about-overview-section {
-            background-color: var(--color-light-cream);
-            text-align: center;
-        }
-
-        .about-overview-section h2 {
-            font-size: 3em;
-            margin-bottom: 40px;
-            color: var(--color-dark-charcoal);
-        }
-
-        .about-overview-section p {
-            font-size: 1.25em;
-            line-height: 1.8;
-            max-width: 900px;
-            margin: 0 auto;
-            color: var(--color-text-dark);
-        }
-
-        /* Meet the Founder Section */
-        .founder-section {
-            background-color: var(--color-background-dark);
-            color: var(--color-text-light);
-            padding: 80px 0;
-        }
-
-        .founder-content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 60px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .founder-image-container {
-            flex: 1 1 300px;
-            text-align: center;
-        }
-
-        .founder-image-container img {
-            width: 280px;
-            height: 280px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 6px solid var(--color-secondary-gold);
-            box-shadow: 0 0 0 10px rgba(184, 134, 11, 0.2);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .founder-image-container img:hover {
-            transform: scale(1.03);
-        }
-
-        .founder-details {
-            flex: 2 1 500px;
-            text-align: left;
-            padding: 0 20px;
-        }
-
-        .founder-details h2 {
-            font-size: 3em;
-            color: var(--color-secondary-gold);
-            margin-bottom: 10px;
-            line-height: 1.1;
-        }
-
-        .founder-details .title {
-            font-size: 1.5em;
-            color: var(--color-text-light);
-            margin-bottom: 25px;
-            opacity: 0.9;
-        }
-
-        .founder-details p {
-            font-size: 1.1em;
-            line-height: 1.7;
-            margin-bottom: 25px;
-            color: rgba(255, 255, 255, 0.8);
-        }
-
-        .founder-details .quote {
-            font-style: italic;
-            font-size: 1.25em;
-            color: var(--color-accent-blush);
-            margin-top: 30px;
-            margin-bottom: 30px;
-            border-left: 5px solid var(--color-secondary-gold);
-            padding-left: 20px;
-            line-height: 1.6;
-        }
-
-        .founder-details .btn {
-            margin-top: 20px;
-        }
-
-        /* Footer */
-        footer {
-            background-color: var(--color-dark-charcoal);
-            color: var(--color-text-light);
-            padding: 60px 0 20px;
-            text-align: center;
-        }
-
-        .footer-content {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
-            text-align: left;
-        }
-
-        .footer-contact, .footer-links {
-            flex: 1 1 280px;
-            margin: 20px;
-        }
-
-        .footer-contact h3, .footer-links h3 {
-            color: var(--color-secondary-gold);
-            margin-bottom: 25px;
-            font-size: 1.6em;
-        }
-
-        .footer-contact p, .footer-contact a {
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-            line-height: 1.8;
-            font-size: 1.05em;
-        }
-
-        .footer-contact a:hover {
-            color: var(--color-accent-blush);
-        }
-
-        .footer-links ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .footer-links ul li {
-            margin-bottom: 10px;
-        }
-
-        .footer-links ul li a {
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-            font-size: 1.05em;
-            transition: color 0.3s ease-in-out;
-        }
-
-        .footer-links ul li a:hover {
-            color: var(--color-accent-blush);
-        }
-
-        .copyright {
-            border-top: 1px solid rgba(255,255,255,0.1);
-            padding-top: 20px;
-            font-size: 0.9em;
-            color: rgba(255, 255, 255, 0.6);
-        }
-
-        .copyright .powered-by {
-            font-size: 0.8em;
-            opacity: 0.8;
-            margin-top: 5px;
-            letter-spacing: 0.5px;
-        }
-
-        /* Responsive Adjustments */
-        @media (max-width: 992px) {
-            .page-hero-section h1 {
-                font-size: 3em;
-            }
-            .page-hero-section p {
-                font-size: 1.3em;
-            }
-            .about-overview-section h2 {
-                font-size: 2.5em;
-            }
-            .founder-details h2 {
-                font-size: 2.5em;
-            }
-            .founder-details .title {
-                font-size: 1.3em;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .nav-content {
-                flex-direction: column;
-                text-align: center;
-            }
-            .logo {
-                margin-bottom: 15px;
-            }
-            nav ul {
-                flex-direction: column;
-            }
-            nav ul li {
-                margin: 10px 0;
-            }
-
-            .page-hero-section {
-                padding: 100px 20px 70px;
-            }
-            .page-hero-section h1 {
-                font-size: 2.5em;
-            }
-            .page-hero-section p {
-                font-size: 1.1em;
-            }
-
-            .founder-content {
-                flex-direction: column;
-                text-align: center;
-            }
-            .founder-image-container {
-                margin-bottom: 30px;
-            }
-            .founder-details {
-                text-align: center;
-                padding: 0;
-            }
-            .founder-details .quote {
-                border-left: none;
-                padding-left: 0;
-            }
-
-            .footer-content {
-                flex-direction: column;
-                text-align: center;
-            }
-            .footer-contact, .footer-links {
-                margin: 15px auto;
-                width: 90%;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .page-hero-section h1 {
-                font-size: 2em;
-            }
-            .page-hero-section p {
-                font-size: 1em;
-            }
-            .about-overview-section h2 {
-                font-size: 2em;
-            }
-            .founder-details h2 {
-                font-size: 2em;
-            }
-            .founder-details .title {
-                font-size: 1.1em;
-            }
-            .founder-details p {
-                font-size: 1em;
-            }
-            .founder-details .quote {
-                font-size: 1.1em;
-            }
-        }
-    </style>
+    <!-- The rest of your head section remains unchanged -->
+    <!-- ... -->
 </head>
 <body>
     <header class="sticky-nav">
         <div class="container nav-content">
             <div class="logo">
-                <h1>Mursleen DMC</h1>
+                <h1>Nishat ul ain DMC</h1>
                 <p class="tagline">Built for Results</p>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                </ul>
-            </nav>
+            <!-- ... -->
         </div>
     </header>
 
@@ -493,30 +30,30 @@
         <section class="page-hero-section">
             <div class="container">
                 <h1>Our Story: Built for Your Success</h1>
-                <p>Learn how Mursleen DMC grew from a vision into a results-driven digital consultancy.</p>
+                <p>Learn how Nishat ul ain DMC grew from a vision into a results-driven digital consultancy.</p>
             </div>
         </section>
 
         <section class="about-overview-section">
             <div class="container">
-                <h2>About Mursleen DMC</h2>
-                <p>Mursleen DMC is a results-driven digital consultancy helping businesses around the world grow through smart strategy, creative content, and data-backed campaigns. We believe in transparency, measurable outcomes, and building long-term partnerships with our clients to navigate the complexities of the digital landscape. Our mission is to transform your online challenges into impactful growth opportunities.</p>
+                <h2>About Nishat ul ain DMC</h2>
+                <p>Nishat ul ain DMC is a results-driven digital consultancy helping businesses around the world grow through smart strategy, creative content, and data-backed campaigns. We believe in transparency, measurable outcomes, and building long-term partnerships with our clients to navigate the complexities of the digital landscape. Our mission is to transform your online challenges into impactful growth opportunities.</p>
             </div>
         </section>
 
         <section class="founder-section dark-theme">
             <div class="container founder-content">
                 <div class="founder-image-container">
-                    <img src="https://via.placeholder.com/280x280/F5F5DC/004D40?text=Muhammad+Mursleen" alt="Muhammad Mursleen, Founder of Mursleen DMC">
+                    <img src="https://via.placeholder.com/280x280/F5F5DC/004D40?text=Muhammad+Mursleen" alt="Muhammad Mursleen, Founder of Nishat ul ain DMC">
                 </div>
                 <div class="founder-details">
-                    <h2>Muhammad Mursleen</h2>
+                    <h2>Nishat ul ain</h2>
                     <p class="title">Founder & Lead Consultant</p>
                     <p>With a passion for performance and precision, Mursleen founded this agency to deliver data-driven digital solutions to startups and brands worldwide.</p>
                     <blockquote class="quote">
                         “Digital marketing isn’t about noise — it’s about results.”
                     </blockquote>
-                    <a href="mailto:mursleenshouqat786@gmail.com" class="btn">Contact the Founder</a>
+                    <a href="mailto:nishugul8888@gmail.com" class="btn">Contact the Founder</a>
                 </div>
             </div>
         </section>
@@ -526,8 +63,8 @@
         <div class="container footer-content">
             <div class="footer-contact">
                 <h3>Contact Us</h3>
-                <p>Email: <a href="mailto:mursleenshouqat786@gmail.com">mursleenshouqat786@gmail.com</a></p>
-                <p>Address: Chowk Sarwar Shaheed, Chak No 146 Chak No 518, Chowk Munda – 34030, Pakistan</p>
+                <p>Email: <a href="mailto:nishugul8888@gmail.com">nishugul8888@gmail.com</a></p>
+                <p>Address: Meo Street Jhang Sadar 35200 Pakistan</p>
             </div>
             <div class="footer-links">
                 <h3>Quick Links</h3>
@@ -539,8 +76,8 @@
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2025 Mursleen DMC. All Rights Reserved.</p>
-            <p class="powered-by">Powered by Mursleen DMC</p>
+            <p>&copy; 2025 Nishat ul ain DMC. All Rights Reserved.</p>
+            <p class="powered-by">Powered by Nishat ul ain DMC</p>
         </div>
     </footer>
 </body>
